@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Profile của tui - Phạm Quang Trung</title>
+    <title>Profile của Trung</title>
     <style>
       * {
         box-sizing: border-box;
@@ -158,6 +158,39 @@
         text-align: center;
       }
 
+      /* MARQUEE FIXED */
+      .marquee-wrapper {
+        background-color: #e1ecf7;
+        overflow: hidden;
+        white-space: nowrap;
+        position: relative;
+        height: 40px;
+      }
+
+      .marquee-track {
+        display: inline-block;
+        white-space: nowrap;
+        animation: scrollLeft 10s linear infinite;
+      }
+
+      .marquee-track span {
+        display: inline-block;
+        padding: 10px 0;
+        font-weight: bold;
+        font-size: clamp(1rem, 2vw, 1.2rem);
+        color: #1e3a5f;
+        margin-right: 80px;
+      }
+
+      @keyframes scrollLeft {
+        0% {
+          transform: translateX(0%);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+
       @keyframes fadeIn {
         from {
           opacity: 0;
@@ -223,9 +256,18 @@
       </nav>
     </header>
 
+    <!-- Marquee -->
+    <div class="marquee-wrapper">
+      <div class="marquee-track">
+        <span
+          >🎉 Chào mừng đến với profile của tui, nơi tấu hài được hợp pháp hóa!
+          🎉</span
+        >
+      </div>
+    </div>
+
     <!-- Main Section -->
     <div class="main">
-      <!-- Profile -->
       <div class="profile-box">
         <img
           src="https://scontent.fsgn1-1.fna.fbcdn.net/v/t39.30808-6/406321311_1525421928214502_4914159174244946785_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeH3psrAleil0G7zVpJ7O6A9eZSth5NX6I55lK2Hk1fojqFCVrp3T66BPRgVgwA13Zfu8HbPldfkgosz3b48vHQn&_nc_ohc=qtUmA9gfy4MQ7kNvwFA3PHZ&_nc_oc=Adn8bYFs7FSAcsDn30tdNK27vUzyyF2LQx3UgMMD3Gxtg3mi23AHGtTl6gWPne8VPA0&_nc_zt=23&_nc_ht=scontent.fsgn1-1.fna&_nc_gid=olbh-GjQmaaTOUA8JdzT2Q&oh=00_AfQLa44hCQkht2ACFOXQZW9p-62T7xKAbtT8X4JBBvhRCQ&oe=687408D6"
@@ -234,52 +276,48 @@
         />
         <h1>Xin chào, mình là Trung</h1>
         <p>
-          🚀 Chào mừng bạn đến với <strong>“vũ trụ của TRUNG”</strong> – nơi bug
+          🚀 Chào mừng bạn đến với <strong>“vũ trụ của Trung”</strong> nơi bug
           sống dai, nhưng chủ code còn dai hơn!
         </p>
         <p>
-          <strong>Phạm Quang Trung</strong> sinh năm 2004, hàng nội địa tại
-          HUTECH, phiên bản sinh viên năm 3 nâng cấp liên tục nhưng chưa fix
-          được thói mê deadline sát giờ.
+          <strong>Phạm Quang Trung</strong> sinh năm 2004, là thành viên băng
+          đảng HUTECH, phiên bản sinh viên năm 3 được nâng cấp liên tục nhưng
+          chưa fix được thói mê deadline sát giờ.
         </p>
         <p>
           Không phải thiên tài công nghệ. Cũng chưa phải dev 6 số lương
-          tháng.<br />
-          Nhưng đừng xem thường! Vì tui có một siêu năng lực hiếm ai sánh
-          kịp:<br />
-          <em
+          tháng.<br />Nhưng đừng xem thường! Vì tui có một siêu năng lực hiếm ai
+          sánh kịp:<br /><em
             >“Ngồi máy 12 tiếng không mệt, nhưng viết báo cáo 10 dòng là muốn
-            gục.”
-          </em>
+            gục.”</em
+          >
         </p>
         <p>
           <strong>Ban ngày:</strong> Là sinh viên ngành IT nghiêm túc học,
-          nghiêm túc quên bài.<br />
-          <strong>Ban đêm:</strong> Là ninja bàn phím, chiến bug như boss cuối,
-          đôi lúc trầm ngâm bên... ly mì tôm và câu hỏi “sao code không chạy?”
+          nghiêm túc quên bài.<br /><strong>Ban đêm:</strong> Là ninja bàn phím,
+          chiến bug như boss cuối, đôi lúc trầm ngâm bên... ly mì tôm và câu hỏi
+          “sao code không chạy?”
         </p>
         <p>
-          <strong>Ngoài đời Trung là người:</strong><br />
-          Thích xe, !thích code, thích ngủ nướng.<br />
-          Đam mê game, trà sữa và crush mà không dám inbox.<br />
-          Thích lập trình nhưng làm tới đâu lỏ tới đó :v
+          <strong>Ngoài đời Trung là người:</strong><br />Thích xe, !thích code,
+          thích ngủ nướng.<br />Đam mê game, trà sữa và crush mà không dám
+          inbox.<br />Thích lập trình nhưng làm tới đâu lỏ tới đó :v
         </p>
         <p>
-          <strong>Người ta bảo:</strong> “Sống là phải cháy hết mình.”<br />
-          <strong>Còn tui?</strong> “Cháy deadline thôi cũng đủ mệt rồi.”
+          <strong>Người ta bảo:</strong> “Sống là phải cháy hết mình.”<br /><strong
+            >Còn tui?</strong
+          >
+          “Cháy deadline thôi cũng đủ mệt rồi.”
         </p>
-        <!-- <a href="#" class="button" onclick="toggleIntro()">Xem thêm về tui</a> -->
       </div>
 
-      <!-- Intro Box -->
       <div class="intro-box" id="introBox">
         <p>
-          Đây là phần giới thiệu thêm về tui! 😎<br />
-          Tui là một người đam mê công nghệ, thích khám phá những điều mới mẻ và
-          luôn tìm cách cải thiện bản thân. Dù code đôi khi "lỏ", nhưng tui
-          không bỏ cuộc. Mục tiêu của tui là trở thành một developer chuyên
-          nghiệp, tạo ra những sản phẩm có giá trị và mang lại niềm vui cho mọi
-          người.
+          Đây là phần giới thiệu thêm về tui! 😎<br />Tui là một người đam mê
+          công nghệ, thích khám phá những điều mới mẻ và luôn tìm cách cải thiện
+          bản thân. Dù code đôi khi "lỏ", nhưng tui không bỏ cuộc. Mục tiêu của
+          tui là trở thành một developer chuyên nghiệp, tạo ra những sản phẩm có
+          giá trị và mang lại niềm vui cho mọi người.
         </p>
         <p>
           Ngoài code, tui còn thích nghe nhạc lo-fi, xem phim. Nếu bạn có cùng
@@ -288,7 +326,6 @@
       </div>
     </div>
 
-    <!-- Footer -->
     <footer>
       <p>© 2025 Website by Phạm Quang Trung.</p>
     </footer>
